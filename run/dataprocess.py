@@ -7,6 +7,8 @@ import Utils.FeatureUtil as fu
 import Utils.CommonUtil as cu
 import pickle
 import numpy as np
+from sklearn.preprocessing import PolynomialFeatures
+
 
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.max_rows', 2000)
@@ -231,8 +233,14 @@ class Method2:
         data["monthPerid"] = data["date_dt"].apply(lambda x: cu.getMonthPeriod(x))
         data["weekOfMonth"] = data["date_dt"].apply(lambda x: cu.getWeekofMonth(x))
         data["quarter"]  = data["date_dt"].apply(lambda x: cu.getQuarter(x))
+        data["weekofyear"]  = data["date_dt"].apply(lambda x: cu.getWeekofYear(x))
+        data["summerva"]  = data["date_dt"].apply(lambda x: cu.getSumvocation(x))
 
-        calc =["mean","max", "min", "std"] #
+
+        data["monthhalf"] = data["date_dt"].apply(lambda x: cu.getMonthHalf(x))
+
+
+        calc =["mean"] #
         groupedWeekDay= data[["weekDay","city_code", "district_code"]+fu.predict_feature].groupby(["city_code", "district_code","weekDay"]).agg(calc).reset_index()
         groupedMonth= data[["month","city_code", "district_code"]+fu.predict_feature].groupby(["city_code", "district_code","month"]).agg(calc).reset_index()
         groupedMonthDay= data[["monthDay","city_code", "district_code"]+fu.predict_feature].groupby(["city_code", "district_code","monthDay"]).agg(calc).reset_index()
@@ -240,11 +248,11 @@ class Method2:
         groupedWeekDay.columns = cu.changeColumnsNames("ByWeekDay",list(groupedWeekDay.columns))
         groupedMonth.columns = cu.changeColumnsNames("ByMonth",list(groupedMonth.columns))
         groupedMonthDay.columns = cu.changeColumnsNames("ByMonthDay",list(groupedMonthDay.columns))
-
+        #
         res = pd.merge(groupedWeekDay,data)
         res = pd.merge(res,groupedMonth)
         res = pd.merge(res,groupedMonthDay)
-
+        # #
         city_mean = data[["city_code"] + fu.predict_feature].groupby(["city_code"]).mean().reset_index()
         discrict_mean = data[["district_code"] + fu.predict_feature].groupby(["district_code"]).mean().reset_index()
 
@@ -253,19 +261,42 @@ class Method2:
 
         city_rank = city_mean[["city_code", "city_rank"]]
         district_rank = discrict_mean[["district_code", "district_rank"]]
-
+        #
         district_in_city = data[["district_code","city_code"]].drop_duplicates().groupby(["city_code"]).count().reset_index()
         district_in_city.columns = ["city_code","district_in_city"]
-
+        # #
         res = pd.merge(res, city_rank)
         res = pd.merge(res, district_rank)
         res = pd.merge(res, district_in_city)
-        print(res.shape,list(res.columns))
+        #
+        features = list(data.columns)
+        drop_features = ["city_code", "district_code", "city", "district", "date_dt"] + fu.predict_feature
+        for fea in drop_features:
+            if fea in features:
+                features.remove(fea)
+
+        poly_transformer = PolynomialFeatures(degree=2, interaction_only=True, include_bias=False)
+        poly_data = pd.DataFrame(poly_transformer.fit_transform(data[features]),
+                                 columns=poly_transformer.get_feature_names(features))
+        data = pd.concat([res, poly_data], join="inner", axis=1)
+
+        columns = self.delFeatures(list(data.columns))
+        data =data[columns]
+        print(columns)
 
         return data
         # return res
 
+    def delFeatures(self,columns):
+        timeFea = ["month", "countryHoliDay","monthDay", "weekDay","monthPerid", "quarter","weekOfMonth" ]
+        for fea in columns:
+            if " " in fea:
+                fea1 = fea.split(" ")[0]
+                fea2 = fea.split(" ")[1]
+                if (fea1 not in timeFea and fea2 not in timeFea): #or (fea1  in timeFea and fea2  in timeFea):
+                    columns.remove(fea)
 
+        return columns
 
 
 

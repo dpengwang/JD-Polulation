@@ -112,6 +112,13 @@ def getMonthPeriod(date):
         return 2
     else:
         return 3
+def getSumvocation(date):
+    date = int(str(date)[4:6])
+    if date in ["7","8","2"]:
+        return 1
+    else:
+        return 0
+
 def getSpringDay(date):
     date = str(date)
     if date in fu.springDay:
@@ -126,10 +133,20 @@ def getWeekofMonth(date):
     begin = int(datetime.datetime(int(date[:4]), int(date[4:6]), 1).strftime("%W"))
     return end - begin + 1
 
+def getWeekofYear(date):
+    date = str(date)
+    end = int(datetime.datetime(int(date[:4]), int(date[4:6]), int(date[6:])).strftime("%W"))
+    return end
+
+
 
 def getQuarter(date):
     date = int(str(date)[4:6])
     return (date +1) //3
+
+def getMonthHalf(date):
+    date = int(str(date)[6:])
+    return 0 if date < 15 else 1
 
 
 # date ="20170501"
@@ -140,3 +157,4 @@ def getQuarter(date):
 # print(getWeekDay(date))
 # print(getDateListFromWindow("20180101",10))
 # print(getSpringDay("20180501"))
+# print(getWeekofYear(20180108))

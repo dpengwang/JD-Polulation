@@ -23,10 +23,11 @@ def run(predict_feature):
         "metric": "rmse",
         "num_leaves": 80,
         "min_child_samples": 60,
-        "learning_rate": 0.1,
+        "learning_rate": 0.3,
         "feature_fraction": 0.8,
         "bagging_frequency": 1,
         "bagging_seed": 666,
+        "reg_lambda": 20,
         "verbosity": -1
     }
 
@@ -107,36 +108,49 @@ def run(predict_feature):
     # date_dt, city_code, district_code, dwell, flow_in, flow_out, cityFea, districtFea, weekDayFea, monthFea, specialDayFea
 
     train_feature = list(train_data.columns)
-    nouse_fea  =["city_code","district_code", "date_dt"] + fu.predict_feature
+    nouse_fea = ["city_code","district_code"] + fu.predict_feature  #, "date_dt"
     for fea in nouse_fea:
         if fea in train_feature:
             train_feature.remove(fea)
 
-    print(predict_feature in train_feature,train_feature)
+    print(predict_feature in train_feature, train_feature)
 
     # return
 
-    X = train_data[train_feature]
-    Y = train_data[predict_feature]
+    # X = train_data[train_feature]
+    # Y = train_data[predict_feature]
 
-    X_train, X_val, Y_train, Y_val = train_test_split(X, Y,test_size=0.3,random_state=666)
+    train, val = train_test_split(train_data, test_size=0.3, random_state=55)
+
+    X_train = train[train_feature]
+    Y_train = train[predict_feature]
+
+    X_val = val[train_feature]
+    Y_val = val[predict_feature]
+
+
+
+
     lgb_train = lgb.Dataset(X_train, Y_train)
     lgb_eval = lgb.Dataset(X_val, Y_val, reference=lgb_train)
 
     gbm = lgb.train( params,
                      lgb_train,
                      num_boost_round=40000,
-                     valid_sets=lgb_eval,
+                     valid_sets=[lgb_train, lgb_eval],
                      early_stopping_rounds=100,
                      verbose_eval=100
                     )
 
 
-    valid_y = gbm.predict(X_val[train_feature], num_iteration=gbm.best_iteration)
+    districtName = val["district_code"].values[0]
+    showData = val[val["district_code"] == districtName]
+
+    valid_y = gbm.predict(showData[train_feature], num_iteration=gbm.best_iteration)
 
     axis = [i for i in range(len(valid_y))]
     plt.plot(axis, valid_y, color="blue", label="predict")
-    plt.plot(axis, Y_val, color="green", label="origin")
+    plt.plot(axis, showData[predict_feature], color="green", label="origin")
     plt.legend()
     plt.show()
 

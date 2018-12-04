@@ -4,7 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/run/dataprocess.py" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd017aa-dfe2-40ed-a4d7-c72c1fdd8442" name="Default" comment="" />
+    <list default="true" id="7cd017aa-dfe2-40ed-a4d7-c72c1fdd8442" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/CommonUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/CommonUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/FeatureUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/FeatureUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/dataprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/run/dataprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/run_lightGBM.py" beforeDir="false" afterPath="$PROJECT_DIR$/run/run_lightGBM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run/test.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,23 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataprocess.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run/dataprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1">
-              <caret line="222" column="52" selection-start-line="222" selection-start-column="52" selection-end-line="222" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="README.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+            <state relative-caret-position="198">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -38,8 +34,8 @@
       <file leaf-file-name="CommonUtil.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/CommonUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="142" selection-start-line="142" selection-end-line="142" />
+            <state relative-caret-position="615">
+              <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -47,14 +43,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_lightGBM.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FeatureUtil.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/FeatureUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_lightGBM.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run/run_lightGBM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="234">
+              <caret line="109" column="35" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="35" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <element signature="e#808#882#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/show.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataprocess.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/dataprocess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="286" column="19" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,20 +100,8 @@
       <file leaf-file-name="getResult.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run/getResult.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run/show.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="504">
+              <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -114,9 +139,13 @@
       <find>speci</find>
       <find>20180110</find>
       <find>special</find>
-      <find>85792b2278de59316d1158f6a97537ec</find>
       <find>spe</find>
+      <find>85792b2278de59316d1158f6a97537ec</find>
+      <find>week</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -129,27 +158,30 @@
         <option value="$PROJECT_DIR$/DataProcess/dataprocess.py" />
         <option value="$PROJECT_DIR$/Utils/PathUtil.py" />
         <option value="$PROJECT_DIR$/run/getResult.py" />
-        <option value="$PROJECT_DIR$/run/test.py" />
-        <option value="$PROJECT_DIR$/Utils/FeatureUtil.py" />
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/run/show.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/Utils/FeatureUtil.py" />
         <option value="$PROJECT_DIR$/Utils/CommonUtil.py" />
+        <option value="$PROJECT_DIR$/run/test.py" />
         <option value="$PROJECT_DIR$/run/run_lightGBM.py" />
         <option value="$PROJECT_DIR$/run/dataprocess.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-285" />
-    <option name="y" value="75" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-565" />
+    <option name="y" value="95" />
     <option name="width" value="1940" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,7 +228,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -204,11 +235,12 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tobin\PycharmProjects\PopulationFlow" />
+      <recent name="C:\Users\Tobin\PycharmProjects\PopulationFlow\originData" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tobin\PycharmProjects\PopulationFlow\processedData" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Tobin\PycharmProjects\PopulationFlow\originData" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -223,25 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.getResult">
-    <configuration name="CommonUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PopulationFlow" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/CommonUtil.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.run_lightGBM">
     <configuration name="dataprocess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PopulationFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,20 +328,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PopulationFlow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.CommonUtil" />
       <item itemvalue="Python.run_lightGBM" />
       <item itemvalue="Python.dataprocess (1)" />
-      <item itemvalue="Python.show" />
       <item itemvalue="Python.getResult" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.show" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.getResult" />
         <item itemvalue="Python.run_lightGBM" />
         <item itemvalue="Python.dataprocess (1)" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.show" />
-        <item itemvalue="Python.CommonUtil" />
+        <item itemvalue="Python.getResult" />
       </list>
     </recent_temporary>
   </component>
@@ -351,13 +383,13 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14002642" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.2339515" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.45299146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.062767476" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39800286" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.3988604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,24 +415,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Utils/CommonUtil.py">
+    <entry file="file://$PROJECT_DIR$/run/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2679">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run/run_lightGBM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#808#882#0" />
-          </folding>
+        <state relative-caret-position="108">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -441,7 +459,6 @@
           <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#808#882#0" />
           </folding>
         </state>
       </provider>
@@ -481,20 +498,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/FeatureUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run/run_lightGBM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#808#882#0" />
           </folding>
         </state>
       </provider>
@@ -644,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/originData/transition_train.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="18">
@@ -658,20 +660,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/show.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/getResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="60" selection-start-line="30" selection-start-column="60" selection-end-line="30" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/CommonUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        <state relative-caret-position="615">
+          <caret line="159" column="32" selection-start-line="159" selection-start-column="32" selection-end-line="159" selection-end-column="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -680,35 +703,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/run_lightGBM.py">
+    <entry file="file://$PROJECT_DIR$/Utils/FeatureUtil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#808#882#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run/getResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="342">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run/dataprocess.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="222" column="52" selection-start-line="222" selection-start-column="52" selection-end-line="222" selection-end-column="52" />
+        <state relative-caret-position="440">
+          <caret line="286" column="19" selection-start-line="286" selection-start-column="19" selection-end-line="286" selection-end-column="19" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/run_lightGBM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="109" column="35" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
